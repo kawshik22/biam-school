@@ -1,0 +1,11 @@
+BIAM Laboratory School CMS
+Build: Faculty and Login UX Fix
+Build date: 22 November 2026
+
+Includes:
+- Faculty and leadership directory pages with editable demo records.
+- Six sample faculty profiles (three generated portraits and three initials avatars).
+- Three sample leadership profiles using the provided leadership images.
+- Public login screen no longer auto-redirects merely because an admin session exists.
+- Public and admin visual refinements, lighter section backgrounds and sticky navigation.
+- Safe database-update.sql migration for demo faculty and sample contact settings.

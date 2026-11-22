@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef3f8, #f8f6f0);
+  font:
+    15px Inter,
+    Segoe UI,
+    Arial,
+    sans-serif;
+  color: #17314e;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.auth-card,
+.dashboard-card {
+  width: min(100%, 470px);
+  background: white;
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: 0 22px 70px #102a4618;
+}
+.dashboard-card {
+  width: min(100%, 650px);
+}
+.back {
+  display: inline-block;
+  color: #6c7d8f;
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+.brand-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #102a46;
+  color: #e4b54f;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  font-weight: 800;
+}
+.eyebrow {
+  letter-spacing: 2px;
+  color: #b17d20;
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 22px;
+}
+.auth-card h1,
+.dashboard-card h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+.muted {
+  color: #718096;
+  line-height: 1.6;
+}
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 650;
+  font-size: 13px;
+}
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce3eb;
+  border-radius: 9px;
+  font: inherit;
+}
+button.primary,
+.primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-radius: 9px;
+  padding: 13px;
+  background: #d9aa48;
+  color: #172b42;
+  text-decoration: none;
+  font-weight: 800;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.foot {
+  font-size: 13px;
+  color: #718096;
+  margin-top: 20px;
+}
+.foot a {
+  color: #173d64;
+  font-weight: 700;
+}
+.error,
+.success {
+  padding: 12px;
+  border-radius: 9px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+.error {
+  background: #fff0f0;
+  color: #9e2929;
+}
+.success {
+  background: #eaf8ef;
+  color: #23683b;
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+.profile-grid div {
+  background: #f4f7fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+.profile-grid small,
+.profile-grid strong {
+  display: block;
+}
+.profile-grid small {
+  color: #78889a;
+  margin-bottom: 6px;
+}
+.profile-grid strong {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 520px) {
+  .auth-card,
+  .dashboard-card {
+    padding: 24px;
+  }
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.portal-language {
+  position: fixed;
+  top: 17px;
+  right: 18px;
+  width: auto;
+  padding: 8px 12px;
+  border: 1px solid #d7e0e8;
+  border-radius: 30px;
+  background: #fff;
+  color: #17314e;
+  font-weight: 800;
+  cursor: pointer;
+  z-index: 5;
+}
+.auth-card,
+.dashboard-card {
+  position: relative;
+}
+.session-note {
+  margin: 16px 0;
+  padding: 14px 15px;
+  background: #eef4f8;
+  border: 1px solid #d9e5ee;
+  border-left: 4px solid #d9ae58;
+  border-radius: 10px;
+  color: #284760;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.session-note p {
+  margin: 0 0 8px;
+}
+.session-note > a {
+  display: inline-block;
+  color: #174a71;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.switch-account-form {
+  margin: 6px 0 0;
+}
+.switch-account-form button {
+  border: 1px solid #cbd8e4;
+  background: #fff;
+  color: #284760;
+  border-radius: 7px;
+  padding: 8px 11px;
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+}
+.switch-account-form button:hover {
+  background: #f5f8fb;
+}
